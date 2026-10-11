@@ -3783,7 +3783,24 @@ body {
     /* margin: 0px; */
 }
 
+/* Fix Nexora table on mobile */
+@media (max-width: 768px) {
+    .table-responsive {
+        width: 100%;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+    }
 
+    .employees-table-wrapper {
+        width: 100%;
+        overflow-x: auto !important;
+    }
+
+    .nexora-table {
+        min-width: 900px;
+        white-space: nowrap;
+    }
+}
 
 
 
